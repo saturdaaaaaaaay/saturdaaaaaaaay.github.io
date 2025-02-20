@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 
-export default function LogoButton({src, alt, bg, link}) {
-    const logobuttonstyle = "bg-[" + bg + "] p-2.5 rounded-xl mx-1"
+export default function LogoButton({src, alt, style, link}) {
     return ( 
         <a href={link} target="_blank">
             <Image 
@@ -10,7 +9,7 @@ export default function LogoButton({src, alt, bg, link}) {
                 width={60}
                 height={60}
                 alt={alt}
-                className={logobuttonstyle}
+                className={style}
             />
         </a>
     );

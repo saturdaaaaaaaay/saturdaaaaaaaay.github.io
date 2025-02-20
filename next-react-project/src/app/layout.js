@@ -46,9 +46,9 @@ function Nav(){
 function LogoButtons(){
   return (
     <div className="flex items-center py-3">
-      <LogoButton src="/logos/LinkedIn Logo White.png" alt="LinkedIn Logo" bg="#0072B1" link="https://www.linkedin.com/in/eleanor-carlos/" />
-      <LogoButton src="/logos/GitHub Logo White.svg" alt="GitHub Logo" bg="#2DA44E" link="https://github.com/saturdaaaaaaaay"/>
-      <LogoButton src="/logos/Itch IO Logo White.svg" alt="Itch.io Logo" bg="#FA5C5C" link="https://saturdaaaaaaaay.itch.io/" />
+      <LogoButton src="./LinkedIn_Logo_White.png" alt="LinkedIn Logo" style="bg-[#0072B1] p-2.5 rounded-xl mx-1" link="https://www.linkedin.com/in/eleanor-carlos/" />
+      <LogoButton src="./GitHub_Logo_White.svg" alt="GitHub Logo" style="bg-[#2DA44E] p-2.5 rounded-xl mx-1" link="https://github.com/saturdaaaaaaaay"/>
+      <LogoButton src="./Itch_io_Logo_White.svg" alt="Itch.io Logo" style="bg-[#FA5C5C] p-2.5 rounded-xl mx-1" link="https://saturdaaaaaaaay.itch.io/" />
     </div>
   );
 }
