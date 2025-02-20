@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
+import { Marvel } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
 import LogoButton from "./LogoButton";
 
-const inter = Inter({ subsets: ["latin"] });
+const marvel = Marvel({ weight:'400', subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ function Header() {
       <div className="container mx-auto px-4 w-50">
         <Nav />
         <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)] w-544 h-100">
-          <p>	&gt; Eleanor "Elie" Carlos</p>
+          <p className="text-[64px]">	&gt; Eleanor "Elie" Carlos</p>
         </div>
         <LogoButtons />
       </div>
@@ -26,20 +26,20 @@ function Header() {
 }
 
 function Nav(){
-  const linkstyle = "text-[#585858] bg-[#D9D9D9] py-2 px-3";
+  const linkstyle = "text-[#585858] text-[24px] font-bold bg-[#D9D9D9] py-2 px-3";
   return (
     <nav className="flex items-center py-4">
       <div className="flex-none items-center px-2">
-        <Link className={linkstyle} href="/">Home</Link>
+        <Link className={linkstyle} href="/">home</Link>
       </div>
       <div className="flex-none items-center px-2">
-        <Link className={linkstyle} href="experience">Experience</Link>
+        <Link className={linkstyle} href="experience">experience</Link>
       </div>
       <div className="flex-none items-center px-2">
-        <Link className={linkstyle} href="side_projects">Side Projects</Link>
+        <Link className={linkstyle} href="side_projects">side projects</Link>
       </div>
       <div className="flex-none items-center px-2">
-        <Link className={linkstyle} href="contact_me">Contact Me</Link>
+        <Link className={linkstyle} href="contact_me">contact me</Link>
       </div>
     </nav>
   );
@@ -58,7 +58,7 @@ function LogoButtons(){
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={marvel.className}>
         <Header />
         {children}
       </body>
