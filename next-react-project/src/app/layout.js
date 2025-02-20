@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
+import LogoButton from "./LogoButton";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -10,27 +12,44 @@ export const metadata = {
 };
 
 function Header() {
-  const linkstyle = "text-[#585858] bg-[#D9D9D9] py-2 px-3";
   return (
     <header className="py-4">
       <div className="container mx-auto px-4">
-        <nav className="flex items-center py-4">
-          <div className="flex-none items-center px-2">
-            <Link className={linkstyle} href="/">Home</Link>
-          </div>
-          <div className="flex-none items-center px-2">
-            <Link className={linkstyle} href="experience">Experience</Link>
-          </div>
-          <div className="flex-none items-center px-2">
-            <Link className={linkstyle} href="side_projects">Side Projects</Link>
-          </div>
-          <div className="flex-none items-center px-2">
-            <Link className={linkstyle} href="contact_me">Contact Me</Link>
-          </div>
-        </nav>
+        <Nav />
         <p className="bg-green-700 p-5"> Eleanor "Elie" Carlos</p>
+        <LogoButtons />
       </div>
     </header>
+  );
+}
+
+function Nav(){
+  const linkstyle = "text-[#585858] bg-[#D9D9D9] py-2 px-3";
+  return (
+    <nav className="flex items-center py-4">
+      <div className="flex-none items-center px-2">
+        <Link className={linkstyle} href="/">Home</Link>
+      </div>
+      <div className="flex-none items-center px-2">
+        <Link className={linkstyle} href="experience">Experience</Link>
+      </div>
+      <div className="flex-none items-center px-2">
+        <Link className={linkstyle} href="side_projects">Side Projects</Link>
+      </div>
+      <div className="flex-none items-center px-2">
+        <Link className={linkstyle} href="contact_me">Contact Me</Link>
+      </div>
+    </nav>
+  );
+}
+
+function LogoButtons(){
+  return (
+    <div className="flex items-center py-3">
+      <LogoButton src="/logos/LinkedIn Logo White.png" alt="LinkedIn Logo" bg="#0072B1" link="https://www.linkedin.com/in/eleanor-carlos/" />
+      <LogoButton src="/logos/GitHub Logo White.svg" alt="GitHub Logo" bg="#2DA44E" link="https://github.com/saturdaaaaaaaay"/>
+      <LogoButton src="/logos/Itch IO Logo White.svg" alt="Itch.io Logo" bg="#FA5C5C" link="https://saturdaaaaaaaay.itch.io/" />
+    </div>
   );
 }
 
