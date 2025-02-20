@@ -10,22 +10,22 @@ export const metadata = {
 };
 
 function Header() {
-  const navstyle = "text-[#585858] bg-[#D9D9D9] py-2 px-3";
+  const linkstyle = "text-[#585858] bg-[#D9D9D9] py-2 px-3";
   return (
     <header className="py-4">
       <div className="container mx-auto px-4">
-        <nav className="flex items-center justify-between">
-          <div className="flex items-center">
-            <Link className={navstyle} href="/">Home</Link>
+        <nav className="flex items-center py-4">
+          <div className="flex-none items-center px-2">
+            <Link className={linkstyle} href="/">Home</Link>
           </div>
-          <div className="flex items-center">
-            <Link className={navstyle} href="experience">Experience</Link>
+          <div className="flex-none items-center px-2">
+            <Link className={linkstyle} href="experience">Experience</Link>
           </div>
-          <div className="flex items-center">
-            <Link className={navstyle} href="side_projects">Side Projects</Link>
+          <div className="flex-none items-center px-2">
+            <Link className={linkstyle} href="side_projects">Side Projects</Link>
           </div>
-          <div className="flex items-center">
-            <Link className={navstyle} href="contact_me">Contact Me</Link>
+          <div className="flex-none items-center px-2">
+            <Link className={linkstyle} href="contact_me">Contact Me</Link>
           </div>
         </nav>
         <p className="bg-green-700 p-5"> Eleanor "Elie" Carlos</p>
