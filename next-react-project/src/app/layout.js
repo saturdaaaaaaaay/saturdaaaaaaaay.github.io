@@ -14,9 +14,11 @@ export const metadata = {
 function Header() {
   return (
     <header className="py-4">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 w-50">
         <Nav />
-        <p className="bg-green-700 p-5"> Eleanor "Elie" Carlos</p>
+        <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)] w-544 h-100">
+          <p>	&gt; Eleanor "Elie" Carlos</p>
+        </div>
         <LogoButtons />
       </div>
     </header>
