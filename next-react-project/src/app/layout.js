@@ -17,7 +17,7 @@ function Header() {
       <div className="container mx-auto px-4 w-50">
         <Nav />
         <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)] w-544 h-100">
-          <p className="text-[64px]">	&gt; Eleanor "Elie" Carlos</p>
+          <p className="text-[64px]">	&gt; eleanor "elie" carlos</p>
         </div>
         <LogoButtons />
       </div>
@@ -26,20 +26,29 @@ function Header() {
 }
 
 function Nav(){
-  const linkstyle = "text-[#585858] text-[24px] font-bold bg-[#D9D9D9] py-2 px-3";
+  const linkstyle = "block text-[#585858] text-[24px] font-bold bg-[#D9D9D9] py-2 px-3 will-change-transform transition duration-250 -translate-y-2 hover:-translate-y-1 active:translate-y-0";
+  const edgestyle = "bg-[#6E6E6E]";
   return (
     <nav className="flex items-center py-4">
-      <div className="flex-none items-center px-2">
-        <Link className={linkstyle} href="/">home</Link>
+      <div className="block flex-none items-center px-2">
+        <span className={edgestyle}>
+          <Link href="/"><span className={linkstyle}>home</span></Link>
+        </span>
+      </div>
+      <div className="flex-none items-center px-2]">
+        <span className={edgestyle}>
+          <Link className={linkstyle} href="experience">experience</Link>
+        </span>
       </div>
       <div className="flex-none items-center px-2">
-        <Link className={linkstyle} href="experience">experience</Link>
+        <span className={edgestyle}>
+          <Link className={linkstyle} href="side_projects">side projects</Link>
+        </span>
       </div>
       <div className="flex-none items-center px-2">
-        <Link className={linkstyle} href="side_projects">side projects</Link>
-      </div>
-      <div className="flex-none items-center px-2">
-        <Link className={linkstyle} href="contact_me">contact me</Link>
+        <span className={edgestyle}>
+          <Link className={linkstyle} href="contact_me">contact me</Link>
+        </span>
       </div>
     </nav>
   );
@@ -47,10 +56,28 @@ function Nav(){
 
 function LogoButtons(){
   return (
-    <div className="flex items-center py-3">
-      <LogoButton src="./LinkedIn_Logo_White.png" alt="LinkedIn Logo" style="bg-[#0072B1] p-2.5 rounded-xl mx-1" link="https://www.linkedin.com/in/eleanor-carlos/" />
-      <LogoButton src="./GitHub_Logo_White.svg" alt="GitHub Logo" style="bg-[#2DA44E] p-2.5 rounded-xl mx-1" link="https://github.com/saturdaaaaaaaay"/>
-      <LogoButton src="./Itch_io_Logo_White.svg" alt="Itch.io Logo" style="bg-[#FA5C5C] p-2.5 rounded-xl mx-1" link="https://saturdaaaaaaaay.itch.io/" />
+    <div className="flex items-center py-5">
+      <LogoButton 
+        src="./LinkedIn_Logo_White.png" 
+        alt="LinkedIn Logo" 
+        front_style="block bg-[#0072B1] p-2.5 rounded-xl will-change-transform transition duration-250 -translate-y-2 hover:-translate-y-1 active:translate-y-0"
+        edge_style="bg-[#005D90] w-[60px] h-[60px] rounded-xl mx-1"
+        link="https://www.linkedin.com/in/eleanor-carlos/" 
+      />
+      <LogoButton 
+        src="./GitHub_Logo_White.svg" 
+        alt="GitHub Logo" 
+        front_style="block bg-[#2DA44E] p-2.5 rounded-xl will-change-transform transition duration-250 -translate-y-2 hover:-translate-y-1 active:translate-y-0"
+        edge_style="bg-[#227A3A] w-[60px] h-[60px] rounded-xl mx-1"
+        link="https://github.com/saturdaaaaaaaay"
+      />
+      <LogoButton 
+        src="./Itch_io_Logo_White.svg" 
+        alt="Itch.io Logo" 
+        front_style="block bg-[#FA5C5C] p-2.5 rounded-xl will-change-transform transition duration-250 -translate-y-2 hover:-translate-y-1 active:translate-y-0"
+        edge_style="bg-[#B23E3E] w-[60px] h-[60px] rounded-xl mx-1"
+        link="https://saturdaaaaaaaay.itch.io/" 
+      />
     </div>
   );
 }
