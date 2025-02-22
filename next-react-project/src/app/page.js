@@ -1,7 +1,15 @@
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
+
 export default function Home() {
-  const style = "text-black";
+  const style = "text-black text-[18px] ${inter.className}"
   return (
     <main className="flex flex-col items-center justify-between">
+      <div className="flex flex-col items-center justify-between translate-y-4">
+        <svg width="115" height="35">
+          <rect width="115" height="35" fill="#E2F7FF" fillOpacity={0.8}/>
+        </svg>
+      </div>
       <div className="bg-[#FFF9FF] p-5">
         <p className={style}>Hello! My name is Elie Carlos, and I am a software engineer looking for work.</p>
         <p className={style}>I studied computer science at Northern Arizona University in Flagstaff, AZ and I worked as a technical director at DreamWorks Animation for 3 years. </p>
