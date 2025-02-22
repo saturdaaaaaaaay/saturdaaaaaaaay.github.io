@@ -13,12 +13,13 @@ export const metadata = {
 
 function Header() {
   return (
-    <header className="py-4">
+    <header className="py-1">
       <div className="container mx-auto px-4 w-50">
         <Nav />
-        <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)]">
+        <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)] w-[545px]">
           <p className="text-[64px]">	&gt; eleanor "elie" carlos</p>
         </div>
+        <br></br>
         <LogoButtons />
       </div>
     </header>
@@ -28,7 +29,7 @@ function Header() {
 function Nav(){
   const linkstyle = "block text-[#585858] text-[24px] font-bold bg-[#D9D9D9] py-2 px-3 will-change-transform transition duration-250 -translate-y-2 hover:-translate-y-1 active:translate-y-0";
   return (
-    <nav className="flex items-center py-2">
+    <nav className="flex items-center py-2.5">
       <div className="block flex-none items-center mx-2 bg-[#6E6E6E]">
         <Link href="/"><span className={linkstyle}>home</span></Link>
       </div>
@@ -47,7 +48,7 @@ function Nav(){
 
 function LogoButtons(){
   return (
-    <div className="flex items-center py-5">
+    <div className="flex items-center">
       <LogoButton 
         src="./LinkedIn_Logo_White.png" 
         alt="LinkedIn Logo" 
@@ -74,11 +75,14 @@ function LogoButtons(){
 }
 
 export default function RootLayout({ children }) {
+  const style = "flex flex-col items-center justify-between container mx-auto w-[545px] " + marvel.className;
   return (
     <html lang="en">
-      <body className={marvel.className}>
-        <Header />
-        {children}
+      <body>
+          <div className={style}>
+            <Header />
+            {children}
+          </div>
       </body>
     </html>
   );
