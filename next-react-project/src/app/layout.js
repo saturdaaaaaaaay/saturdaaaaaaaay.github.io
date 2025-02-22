@@ -16,7 +16,7 @@ function Header() {
     <header className="py-4">
       <div className="container mx-auto px-4 w-50">
         <Nav />
-        <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)] w-544 h-100">
+        <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)]">
           <p className="text-[64px]">	&gt; eleanor "elie" carlos</p>
         </div>
         <LogoButtons />
@@ -27,28 +27,19 @@ function Header() {
 
 function Nav(){
   const linkstyle = "block text-[#585858] text-[24px] font-bold bg-[#D9D9D9] py-2 px-3 will-change-transform transition duration-250 -translate-y-2 hover:-translate-y-1 active:translate-y-0";
-  const edgestyle = "bg-[#6E6E6E]";
   return (
-    <nav className="flex items-center py-4">
-      <div className="block flex-none items-center px-2">
-        <span className={edgestyle}>
-          <Link href="/"><span className={linkstyle}>home</span></Link>
-        </span>
+    <nav className="flex items-center py-2">
+      <div className="block flex-none items-center mx-2 bg-[#6E6E6E]">
+        <Link href="/"><span className={linkstyle}>home</span></Link>
       </div>
-      <div className="flex-none items-center px-2]">
-        <span className={edgestyle}>
-          <Link className={linkstyle} href="experience">experience</Link>
-        </span>
+      <div className="flex-none items-center mx-2 bg-[#6E6E6E]">
+        <Link className={linkstyle} href="experience">experience</Link>
       </div>
-      <div className="flex-none items-center px-2">
-        <span className={edgestyle}>
-          <Link className={linkstyle} href="side_projects">side projects</Link>
-        </span>
+      <div className="flex-none items-center mx-2 bg-[#6E6E6E]">
+        <Link className={linkstyle} href="side_projects">side projects</Link>
       </div>
-      <div className="flex-none items-center px-2">
-        <span className={edgestyle}>
-          <Link className={linkstyle} href="contact_me">contact me</Link>
-        </span>
+      <div className="flex-none items-center mx-2 bg-[#6E6E6E]">
+        <Link className={linkstyle} href="contact_me">contact me</Link>
       </div>
     </nav>
   );
