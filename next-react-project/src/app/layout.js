@@ -16,8 +16,8 @@ function Header() {
     <header className="py-1">
       <div className="container mx-auto px-4 w-50">
         <Nav />
-        <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)] w-[545px]">
-          <p className="text-[64px]">	&gt; eleanor "elie" carlos</p>
+        <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)]">
+          <p className="text-[64px]">	&gt; eleanor "elie" carlos <span className="animate-blink">|</span></p>
         </div>
         <br></br>
         <LogoButtons />
@@ -75,7 +75,7 @@ function LogoButtons(){
 }
 
 export default function RootLayout({ children }) {
-  const style = "flex flex-col items-center justify-between container mx-auto w-[545px] " + marvel.className;
+  const style = "flex flex-col items-center justify-between container mx-auto w-[585px] " + marvel.className;
   return (
     <html lang="en">
       <body>
