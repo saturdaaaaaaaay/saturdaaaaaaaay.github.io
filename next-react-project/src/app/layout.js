@@ -19,8 +19,10 @@ function Header() {
         <div className="bg-green-700 p-5 shadow-[inset_0_4px_5px_rgba(0,0,0,0.6)]">
           <p className="text-[64px]">	&gt; eleanor "elie" carlos <span className="animate-blink">|</span></p>
         </div>
-        <br></br>
-        <LogoButtons />
+        <div className="flex items-center my-2">
+          <LogoButtons />
+          <Speaker />
+        </div>
       </div>
     </header>
   );
@@ -74,14 +76,69 @@ function LogoButtons(){
   );
 }
 
+function SpeakerHole() {
+  return (
+    <span className="w-[10px] h-[10px] bg-[#484B5B] rounded-full inline-block shadow-[inset_0_4px_4px_rgba(0,0,0,0.4)] m-[1.7px]"></span>
+  );
+}
+
+function SpeakerRow() {
+  return (
+    <div className="text-[3px]">
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+      <SpeakerHole />
+    </div>
+  );
+}
+
+function Speaker() {
+  return (
+    <div>
+      <SpeakerRow />
+      <SpeakerRow />
+      <SpeakerRow />
+      <SpeakerRow />
+      <SpeakerRow />
+    </div>
+  );
+}
+
 export default function RootLayout({ children }) {
-  const style = "flex flex-col items-center justify-between container mx-auto w-[585px] " + marvel.className;
+  const style = "w-[585px] bg-[#515467] rounded-3xl -translate-y-3 " + marvel.className;
   return (
     <html lang="en">
-      <body>
-          <div className={style}>
-            <Header />
-            {children}
+      <body className="flex flex-col items-center justify-between container mx-auto">
+          <div className="bg-[#454757] mx-auto w-[585px] m-10 rounded-3xl">
+            <div className={style}>
+              <br />
+              <Header />
+              {children}
+              <br />
+            </div>
           </div>
       </body>
     </html>

@@ -1,6 +1,6 @@
 export default async function Page() {
     return (
-        <main className="flex flex-col items-center justify-between">
+        <main className="flex flex-col items-center justify-between mx-1">
             <h1>Video Games</h1>
             <p>These video games were created with Godot and hosted on itch.io</p>
             <div>
