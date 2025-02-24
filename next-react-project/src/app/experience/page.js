@@ -1,6 +1,6 @@
 export default async function Page() {
     return (
-        <main className="flex flex-col items-center justify-between">
+        <main className="flex flex-col items-center justify-between transition-all duration-2 ease-in">
             <h1>Work Experience</h1>
             <div className="px-5 mx-1">
                 <div>
@@ -27,8 +27,13 @@ export default async function Page() {
                     <ul>
                         <li>Developed materials and text displays with Blueprints in Unreal Engine 4 for an education VR game.</li>
                     </ul>
-                    <iframe className="p-4" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6783499477794861056" height="542" width="504" frameBorder="0" allowFullScreen="" title="Embedded post"></iframe>
-                    <iframe className="p-4" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6780654299925102592" height="542" width="504" frameBorder="0" allowFullScreen="" title="Embedded post"></iframe>
+                    <details>
+                        <summary className="cursor-pointer">Demos</summary>
+                        <div className="bg-[#454757] rounded-3xl">
+                            <iframe className="m-4" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6783499477794861056" height="542" width="504" allowFullScreen="" title="Embedded post"></iframe>
+                            <iframe className="m-4" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6780654299925102592" height="542" width="504" allowFullScreen="" title="Embedded post"></iframe>
+                        </div>
+                    </details>
                 </div>
                 <div>
                     <h2>CS Teacher's Assistant</h2>
