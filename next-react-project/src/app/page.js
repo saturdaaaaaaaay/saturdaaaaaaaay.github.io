@@ -10,7 +10,7 @@ export default function Home() {
           <rect width="115" height="35" fill="#E2F7FF" fillOpacity={0.8}/>
         </svg>
       </div>
-      <div className="bg-[url('/recycled_paper_texture.jpg')] bg-[#FFF9FF] bg-repeat bg-contain bg-blend-multiply p-5 mx-5">
+      <div className="bg-[url('/recycled_paper_texture.jpg')] bg-[#FFF9FF] bg-repeat bg-contain bg-blend-multiply p-5 mx-5 shadow-xl">
         <p className={style}>Hello! My name is Elie Carlos, and I am a software engineer looking for work.</p>
         <p className={style}>I studied computer science at Northern Arizona University in Flagstaff, AZ and I worked as a technical director at DreamWorks Animation for 3 years. </p>
         <p className={style}>I also enjoy coding side projects, video games in particular. I have an itch.io where I post those games.</p>
