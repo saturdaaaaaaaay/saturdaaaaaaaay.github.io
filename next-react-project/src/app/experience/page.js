@@ -9,7 +9,7 @@ export default async function Page() {
                     <h3>December 2021 - January 2025</h3>
                     <ul>
                         <li>Developed tools for use in Maya using Python, MEL, and PyQT.</li>
-                        <li>Supported artists which tasks such as publishing assets and debugging existing pipeline tools.</li>
+                        <li>Supported artists with tasks such as publishing assets and debugging existing pipeline tools.</li>
                     </ul>
                 </div>
                 <div>
@@ -25,7 +25,7 @@ export default async function Page() {
                     <h3 className="italic">Advanced Media Lab at NAU</h3>
                     <h3>January 2021 - April 2021</h3>
                     <ul>
-                        <li>Developed materials and text displays with Blueprints in Unreal Engine 4 for an education VR game.</li>
+                        <li>Developed materials and text displays with Blueprints in Unreal Engine 4 for an educational VR game.</li>
                     </ul>
                     <details>
                         <summary className="cursor-pointer">Demos</summary>
@@ -40,7 +40,7 @@ export default async function Page() {
                     <h3 className="italic">Northern Arizona University</h3>
                     <h3>August 2019 - November 2020</h3>
                     <ul>
-                        <li>Reviewed students' assignments & exams for an object-oriented programming and provided feedback.</li>
+                        <li>Reviewed students' assignments & exams for an object-oriented programming course and provided feedback.</li>
                     </ul>
                 </div>
                 <div>
