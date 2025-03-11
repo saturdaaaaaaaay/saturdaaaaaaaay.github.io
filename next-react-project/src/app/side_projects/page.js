@@ -10,6 +10,21 @@ export default async function Page() {
                 <a href="https://github.com/saturdaaaaaaaay/Pronoun-ID-Machine" target="_blank" className="text-[24px] underline">
                     GitHub Repo
                 </a>
+                <details className="py-1">
+                    <summary className="cursor-pointer">Tech Talk (YouTube)</summary>
+                    <div className="bg-[#454757] rounded-3xl">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/vHj0IYNSQg0?si=asNUf_GN22M_3NXs" 
+                            title="YouTube video player" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                            className="rounded-3xl p-3"
+                        ></iframe>
+                    </div>
+                </details>
                 <iframe 
                     src="https://itch.io/embed/2929977?border_width=5&amp;bg_color=D9D9D9&amp;fg_color=585858" 
                     width="552" 
