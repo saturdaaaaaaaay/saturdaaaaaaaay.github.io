@@ -19,8 +19,8 @@ export default async function Page() {
                             src="https://www.youtube.com/embed/vHj0IYNSQg0?si=asNUf_GN22M_3NXs" 
                             title="YouTube video player" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
                             className="rounded-3xl p-3"
                         ></iframe>
                     </div>
