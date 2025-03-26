@@ -1,6 +1,6 @@
 export default async function Page() {
     return (
-        <main className="flex flex-col items-center justify-between transition-all duration-2 ease-in">
+        <main className="flex flex-col items-center justify-between">
             <h1>Work Experience</h1>
             <div className="px-5 mx-1">
                 <div>
@@ -53,6 +53,26 @@ export default async function Page() {
                         <li>Responded to emails, self-reported tickets, and voicemails.</li>
                         <li>Monitored campus server rooms.</li>
                     </ul>
+                </div>
+            </div>
+
+            <h1>Education</h1>
+            <div className="px-1 mx-1">
+                <div>
+                    <h2>Northern Arizona University</h2>
+                    <h3 className="italic">Bachelor of Science in Computer Science</h3>
+                    <h3>Graduated Magna Cum Laude in December 2021</h3>
+                    <ul>
+                        <li>CS212: Web Programming -- HTML, CSS, JavaScript</li>
+                        <li>CS249: Data Structures -- Java</li>
+                        <li>CS345: Principles of Database Systems -- SQL, NoSQL</li>
+                        <li>CS413: Virtual Worlds -- JavaScript</li>
+                        <li>CS430: Computer Graphics -- C, JavaScript</li>
+                        <li>CS460: Computer Networks -- JavaScript</li>
+                    </ul>
+                    <h2>Rio Salado College</h2>
+                    <h3 className="italic">Associate of Arts</h3>
+                    <h3>Graduated with Honors in May 2018</h3>
                 </div>
             </div>
         </main>
