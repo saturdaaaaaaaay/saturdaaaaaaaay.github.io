@@ -75,6 +75,22 @@ export default async function Page() {
                     <h3>Graduated with Honors in May 2018</h3>
                 </div>
             </div>
+
+            <h1>Certifications</h1>
+            <div>
+                <h2>LinkedIn Learning Courses</h2>
+                <ul>
+                    <li>COBOL Essential Training</li>
+                    <li>TypeScript Essential Training</li>
+                    <li>Drupal 9 Essential Training (Courses 1-6)</li>
+                    <li>React Essential Training</li>
+                    <li>Learning Docker</li>
+                    <li>Learning Kubernetes</li>
+                    <li>Learning MySQL Development</li>
+                    <li>Python Object-Oriented Programming</li>
+                    <li>Python Essential Training</li>
+                </ul>
+            </div>
         </main>
     );
 }
